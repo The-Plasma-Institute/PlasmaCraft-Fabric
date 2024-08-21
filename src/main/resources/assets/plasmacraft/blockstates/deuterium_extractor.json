@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "plasmacraft:block/deuterium_extractor" }
+    }
+}
