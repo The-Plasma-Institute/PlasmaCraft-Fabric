@@ -19,10 +19,10 @@
 			"com.joelinrome.PlasmaCraft"
 		],
 		"fabric-datagen": [
-			"com.joelinrome.PlasmaCraftDataGenerator"
+			"com.joelinrome.datagen.DataGenerator"
 		],
 		"client": [
-			"com.joelinrome.PlasmaCraftClient"
+			"com.joelinrome.Client"
 		]
 	},
 	"mixins": [

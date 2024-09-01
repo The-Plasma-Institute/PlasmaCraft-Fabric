@@ -1,11 +1,10 @@
 package com.joelinrome;
 
+import com.joelinrome.block.BlockRegister;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.joelinrome.block.BlockRegister;
 
 public class PlasmaCraft implements ModInitializer {
 	public static final String MOD_ID = "plasmacraft";

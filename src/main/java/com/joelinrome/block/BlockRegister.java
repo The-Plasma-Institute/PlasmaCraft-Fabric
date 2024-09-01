@@ -1,7 +1,6 @@
 package com.joelinrome.block;
 
 import com.joelinrome.PlasmaCraft;
-
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -14,8 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class BlockRegister {
 
-	public static final Block DEUTERIUM_EXTRACTOR_BLOCK = register(
-			new Block(AbstractBlock.Settings.create()),
+	public static final Block DEUTERIUM_EXTRACTOR = register(
+			new DeuteriumExtractorBlock(AbstractBlock.Settings.create()),
 			"deuterium_extractor",
 			true
 	);
@@ -35,8 +34,8 @@ public class BlockRegister {
 	}
 
     public static void initialize() {
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(itemgroup -> {
-			itemgroup.add(DEUTERIUM_EXTRACTOR_BLOCK);
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(itemGroup -> {
+			itemGroup.add(DEUTERIUM_EXTRACTOR);
 		});
 	}
 }
